@@ -1,1 +1,142 @@
 
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alamyerGYR - Institut für Nachhilfe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                    </svg>
+                    <div>
+                        <h1 class="logo-title">alamyerGYR</h1>
+                        <p class="logo-subtitle" data-translate="home.subtitle">Ihr Institut für erstklassigen Nachhilfeunterricht</p>
+                    </div>
+                </a>
+
+                <nav class="nav">
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link active" data-translate="nav.home">Startseite</a>
+                        <a href="contact.html" class="nav-link" data-translate="nav.contact">Kontakt</a>
+                    </div>
+                    
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="de">🇩🇪 Deutsch</button>
+                        <button class="lang-btn" data-lang="en">🇬🇧 English</button>
+                        <button class="lang-btn" data-lang="ar">🇸🇦 العربية</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-translate="home.title">Willkommen bei alamyerGYR</h1>
+                <p class="hero-subtitle" data-translate="home.subtitle">Ihr Institut für erstklassigen Nachhilfeunterricht</p>
+                <p class="hero-description" data-translate="home.description">
+                    Wir bieten professionellen Nachhilfeunterricht in Mathematik, Deutsch und Physik für Schüler aller Klassenstufen. 
+                    Unser erfahrenes Team unterstützt Sie beim Erreichen Ihrer schulischen Ziele.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="subjects">
+        <div class="container">
+            <h2 class="section-title" data-translate="subjects.title">Unsere Fächer</h2>
+            
+            <div class="subjects-grid">
+                <!-- Math -->
+                <div class="subject-card">
+                    <div class="subject-icon math-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M3 9h18M9 21V9"/>
+                        </svg>
+                    </div>
+                    <h3 class="subject-title" data-translate="subjects.math">Mathematik</h3>
+                    <p class="subject-description" data-translate="subjects.math.desc">
+                        Von Grundrechenarten bis zur höheren Mathematik - wir machen Mathe verständlich.
+                    </p>
+                </div>
+
+                <!-- German -->
+                <div class="subject-card">
+                    <div class="subject-icon german-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="subject-title" data-translate="subjects.german">Deutsch</h3>
+                    <p class="subject-description" data-translate="subjects.german.desc">
+                        Grammatik, Rechtschreibung, Textanalyse und kreatives Schreiben.
+                    </p>
+                </div>
+
+                <!-- Physics -->
+                <div class="subject-card">
+                    <div class="subject-icon physics-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="1"/>
+                            <circle cx="12" cy="12" r="5"/>
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                    </div>
+                    <h3 class="subject-title" data-translate="subjects.physics">Physik</h3>
+                    <p class="subject-description" data-translate="subjects.physics.desc">
+                        Mechanik, Elektrizität, Optik und moderne Physik einfach erklärt.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location">
+        <div class="container">
+            <div class="location-header">
+                <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <h2 class="section-title" data-translate="location.title">Unser Standort</h2>
+            </div>
+            
+            <div class="location-card">
+                <h3 class="location-card-title" data-translate="location.address">Besuchen Sie uns</h3>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4089524159643!2d13.404953976750634!3d52.52000997197683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851e1e9ad4f45%3A0x4a3c8e6b98c3e7d1!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Institute Location Map">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
